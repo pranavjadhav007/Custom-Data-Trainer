@@ -1,0 +1,15 @@
+.top_div img {
+    width: 450px;
+    height: 300px;
+    border: 2px solid black;
+}
+
+.local img {
+    width: 1000px;
+    height: 400px;
+    border: 2px solid black;
+}
+
+.top_div li {
+    font-size: 20px;
+}

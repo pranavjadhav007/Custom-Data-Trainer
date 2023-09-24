@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Data Trainer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Custom Data Trainer</h1>
+    <form action="{{url_for('predict')}}" method="post" onsubmit="imgren()">
+        <h1>Fill and select the below parameters</h1>
+        <div>
+            <h2> <b>  {{noofclasses}}</b></h2>
+            <h2> <b>  {{nameofclasses}}</b></h2>
+            <!--<p>
+                <h5>{{param0}}</h5>
+                <h5>{{param1}} </h5>
+                <h5>{{param2}}</h5>
+                <h5>{{param3}} </h5>
+                <h5>{{param4}}</h5>
+                <h5>{{param5}} </h5>
+                <h5>{{param6}}</h5>
+            </p> -->
+
+        </div> <br><br>
+        <label class="fh" for="fh">Forehead Height(in cm): &nbsp; </label>
+        <input type="number" step="0.01" id="fh" name="fname"><br><br><br>
+
+        <p>Are the lips thin or thick: </p>
+        <label for="thin">Thin</label>
+        <input type="radio" id="thin" name="lips_th" value="1" required> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="thick">Thick</label>
+        <input type="radio" id="thick" name="lips_th" value="0" required> <br><br><br>
+
+        <button type="submit" class="btn btn-outline-light">Predict</button> <br> <br>
+
+    </form>
+
+
+</body>
+
+</html>
